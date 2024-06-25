@@ -1,3 +1,4 @@
+from signLanguage.logger import logging
 import sys
 
 
@@ -25,4 +26,6 @@ class SignException(Exception):
         )
 
     def __str__(self):
-        return self.error_message
+        message = self.error_message
+        logging.critical(message)
+        return message
