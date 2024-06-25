@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s] - %(name)s - %(lev
 # project name
 project_name = "signLanguage"
 
-# folder and files
+# folder and files structure
 list_of_files = [
     "data/.gitkeep",
     f"{project_name}/__init__.py",
@@ -40,6 +40,7 @@ list_of_files = [
 
 ]
 
+# create the files and folder structure
 for filepath in list_of_files:
     filepath = Path(filepath)
 
