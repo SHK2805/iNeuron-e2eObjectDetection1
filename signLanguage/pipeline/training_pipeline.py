@@ -14,9 +14,7 @@ class TrainPipeline:
 
     def start_data_ingestion(self) -> DataIngestionArtifact:
         try:
-            logging.info(
-                "Entered the start_data_ingestion method of TrainPipeline class"
-            )
+            logging.info("Entered the start_data_ingestion method of TrainPipeline class")
             logging.info("Getting the data from URL")
 
             data_ingestion = DataIngestion(
