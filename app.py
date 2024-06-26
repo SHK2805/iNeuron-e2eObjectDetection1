@@ -1,11 +1,8 @@
 # print("Om SaiRam")
-import sys
 from signLanguage.logger import logging
-from signLanguage.exception import SignException
+from signLanguage.pipeline.training_pipeline import TrainPipeline
 
 
 logging.info("Welcome to the Sign Language Detection")
-try:
-    a = 10 / 0
-except Exception as e:
-    raise SignException(e, sys) from e
+train_pipeline = TrainPipeline()
+train_pipeline.run_pipeline()
