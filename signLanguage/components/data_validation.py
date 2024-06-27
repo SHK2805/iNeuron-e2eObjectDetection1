@@ -24,7 +24,10 @@ class DataValidation:
         try:
 
             validation_status = None
-            all_files = os.listdir(self.data_ingestion_artifact.feature_store_path)
+            files_path: str = os.path.join(self.data_ingestion_artifact.feature_store_path,
+                                           "SignLanguage_CollectedImages")
+            logging.info(f"Validating the files in: {files_path}")
+            all_files = os.listdir(files_path)
 
             for file in all_files:
                 if file not in self.data_validation_config.required_file_list:
