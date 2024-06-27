@@ -167,3 +167,4 @@ yolov5/*
 
 .DS_Store
 /yolov5
+/valid

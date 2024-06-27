@@ -7,10 +7,10 @@ Data ingestion related constants
 """
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
-ZIP_FILE_NAME = "CollectedImages"
+DATA_ZIP_FILE_NAME = "CollectedImages"
 GIT_REPO_NAME = "iNeuron-e2eObjectDetection1"
 GIT_USER = "SHK2805"
-DATA_DOWNLOAD_URL: str = f"https://github.com/{GIT_USER}/{GIT_REPO_NAME}/raw/main/{ZIP_FILE_NAME}.zip"
+DATA_DOWNLOAD_URL: str = f"https://github.com/{GIT_USER}/{GIT_REPO_NAME}/raw/main/{DATA_ZIP_FILE_NAME}.zip"
 
 """
 Data validation related constants
@@ -29,3 +29,4 @@ MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolov5s.pt"
 MODEL_TRAINER_NO_EPOCHS: int = 1
 
 MODEL_TRAINER_BATCH_SIZE: int = 16
+
