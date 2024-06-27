@@ -22,3 +22,10 @@ This is an end to end object detection project form iNeuron by Bappy
   * Model Trainer
   * Model Pusher
 * main app.py
+
+# Mini Workflow
+* constant/training_pipeline/__init__.py
+* config_entity.py
+* artifacts_entity.py
+* components/
+* 

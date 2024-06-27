@@ -163,6 +163,7 @@ cython_debug/
 CollectedImages/*
 artifacts/*
 log/*
-
+yolov5/*
 
 .DS_Store
+/yolov5
