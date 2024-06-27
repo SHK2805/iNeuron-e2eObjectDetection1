@@ -13,9 +13,12 @@ This is an end to end object detection project form iNeuron by Bappy
   * artifacts_entity.py
 * components
   * data_ingestion.py
+  * data_validation.py
 * Pipeline
   * Data Ingestion
+    * training_pipeline.py
   * Data Validation
+    * training_pipeline.py
   * Model Trainer
   * Model Pusher
 * main app.py
