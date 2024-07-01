@@ -169,3 +169,5 @@ yolov5/*
 /yolov5
 /valid
 /__MACOSX
+/.idea
+.idea/misc.xml
