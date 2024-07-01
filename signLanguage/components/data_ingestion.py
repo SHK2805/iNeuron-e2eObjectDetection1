@@ -48,11 +48,7 @@ class DataIngestion:
                 zip_ref.extractall(feature_store_path)
             logging.info(f"Extracted zip file: {zip_file_path} into dir: {feature_store_path}")
 
-            macosx_directory_path = os.path.join(feature_store_path, "__MACOSX")
-            if os.path.exists(macosx_directory_path):
-                shutil.rmtree(macosx_directory_path)
-                logging.info(f"Directory {macosx_directory_path} removed")
-
+            # os.system("pwd")
 
             return feature_store_path
 
