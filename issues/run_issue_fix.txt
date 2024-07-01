@@ -1,0 +1,11 @@
+uninstall opencv, opencv-python, opencv-python-headless, torch, torchvision
+install the compatible versions 
+pip list --format=freeze | grep opencv
+pip install opencv-python-headless
+pip list --format=freeze | grep torch
+pip install -U torch torchvision
+
+
+
+/opt/anaconda3/lib/python3.11/site-packages/cv2/typing/__init__.py comment the below
+LayerId = cv2.dnn.DictValue
