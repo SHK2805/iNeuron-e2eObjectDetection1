@@ -20,7 +20,7 @@ CORS(app)
 
 class ClientApp:
     def __init__(self):
-        self.filename = "inputImage.jpg"
+        self.filename = "inputImage1.jpg"
 
 
 @app.route("/")
@@ -43,9 +43,9 @@ def predictRoute():
         decodeImage(image, clApp.filename)
 
         os.system(
-            "cd yolov5/ && python detect.py --weights my_model.pt --img 416 --conf 0.5 --source ../data/inputImage.jpg")
+            "cd yolov5/ && python detect.py --weights best.pt --img 416 --conf 0.5 --source ../data/inputImage1.jpg")
 
-        opencodedbase64 = encodeImageIntoBase64("yolov5/runs/detect/exp/inputImage.jpg")
+        opencodedbase64 = encodeImageIntoBase64("yolov5/runs/detect/exp/inputImage1.jpg")
         result = {"image": opencodedbase64.decode('utf-8')}
         os.system("rm -rf yolov5/runs")
 
