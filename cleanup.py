@@ -11,3 +11,4 @@ def delete_folder(name: str):
 
 
 delete_folder("artifacts")
+delete_folder("log/*")

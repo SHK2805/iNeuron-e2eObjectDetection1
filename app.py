@@ -32,7 +32,7 @@ def home():
 def trainRoute():
     obj = TrainPipeline()
     obj.run_pipeline()
-    return "Training Successfull!!"
+    return "Training Successfully!!"
 
 
 @app.route("/predict", methods=['POST', 'GET'])
